@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Title from '../Title';
+// import Title from '../Title';
 import CartColumns from './CartColumns';
 import EmptyCart from './EmptyCart';
 import {ProductConsumer} from '../../context';
@@ -19,8 +19,8 @@ export default class Cart extends Component {
                                <h1>Your Cart</h1> 
                              {/* <Title name="your" title="cart"></Title>  */}
                         <CartColumns/>
-                        <Cartlist value={value}/>
-                        <CartTotals value={value}/>
+                        <Cartlist value= {value}/>
+                        <CartTotals value= {value}/>
 
                             </React.Fragment>          
         );

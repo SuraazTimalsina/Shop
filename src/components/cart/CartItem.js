@@ -5,19 +5,19 @@ export default function CartItem({item,value}) {
     const {increment,decrement,removeItem} = value;
     return (
         <div className="row my-2 text-capitalize text-center">
-            <div className="col-10 mx-auto col-lg-2">
+            <div className=" mx-auto col lg-2">
                 <img src={img} style= {{width:"5rem", height:"5rem"}} 
                 className="img-fluid" alt="product"></img>
             </div>
-            <div className="col-10 mx-auto col-lg-2">
+            <div className=" mx-auto col lg-2">
                 <span className="d-lg-none">product :</span>
                 {title}
                 </div>
-                <div className="col-10 mx-auto col-lg-2">
+                <div className=" mx-auto col lg-2">
                 <span className="d-lg-none">price :</span>
                 {price}
                 </div>
-                <div className="col-10 mx-auto col-lg-12 my-2 my-lg-0">
+                <div className=" mx-auto col lg-2 my-2 my-lg-0">
                     <div className="d-flex justify-content-center">
                         <div>
                             <span className="btn btn-black mx-1" onClick={()=> decrement (id) }>
@@ -29,14 +29,14 @@ export default function CartItem({item,value}) {
                         </div>
                     </div>
                 </div>
-                <div class="row my-1 text-capitalize text-center">
-                    <div className='cart-icon' onClick={()=>removeItem(id)}>
+                <div class=" mx-auto col lg-2">
+                    <div className='cart-icon' onClick={() => removeItem(id)}>
                         <i className="fas fa-trash"></i>
                     </div>
                 </div>
 
-                <div class="row my-1 text-capitalize text-center">
-                    <strong>item total :Rs{total}</strong>
+                <div class=" mx-auto col lg-2">
+                    <strong>item total :Rs {total}</strong>
                 </div>
                 
 

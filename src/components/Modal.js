@@ -9,21 +9,24 @@ export default class  extends Component {
         return (
             <ProductConsumer>
                 {(value)=>{
-                    const {modalOpen,closeModal}= value;
-                    const{img,title,price} =value.modalProduct;
+                    const {modalOpen, closeModal}= value;
+                    const{img, title, price} = value.modalProduct;
 
                     if(!modalOpen){
                         return null;
                     }
                     else{
-                       return ( <ModalContainer>
+                       return ( 
+                       <ModalContainer>
                             <div className="container">
                                 <div className="row">
-                                    <div id="modal" clas="col-8 mx-auto col-md-6 col-lg-4 text-center text-capitalize p-5">
+                                    <div id="modal" 
+                                    clas="col-8 mx-auto col-md-6 col-lg-4 text-center text-capitalize p-5">
                                         <h5>Item Added to the Cart</h5>
-                                        <img src={img} className="img-fluid" alt="product"></img>
+                                        <img src={img} className="img-fluid" alt="product"/>
                                          <h5>{title}</h5>
-                                         <h5 className="text-muted">Price : RS {price}</h5>
+                                         <h5 className="text-muted">price : RS {price}
+                                         </h5>
                                          <Link to ='/'>
                                              <ButtonContainer  onClick={()=>closeModal()}>
                                                  Continue Shopping
@@ -49,7 +52,7 @@ export default class  extends Component {
     }
 }
 
-const ModalContainer =styled.div `
+const ModalContainer = styled.div `
 position: fixed;
 top: 0;
 left: 0;
