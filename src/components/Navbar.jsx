@@ -42,4 +42,3 @@ background:var(--mainBlue);
     text-transform:capitalize !important;
 }
 `
-

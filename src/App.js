@@ -8,6 +8,7 @@ import Cart from './components/cart/Cart';
 import Default from './components/Default';
 import Productlist from './components/ProductList';
 import Modal from './components/Modal';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route component={Default}/>
         </Switch>
         <Modal/>
+        <Footer/>
     </React.Fragment>
   );
 }
